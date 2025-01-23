@@ -1,0 +1,7 @@
+<h1>{{ view.object.title|default:"Create Post" }}</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+<a href="{% url 'blogapp:post_list' %}">Back to list</a>
