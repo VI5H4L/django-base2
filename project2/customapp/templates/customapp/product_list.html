@@ -1,0 +1,10 @@
+<h1>Product List</h1>
+<a href="{% url 'customapp:product_add' %}">Add Product</a>
+<ul>
+    {% for product in products %}
+        <li>
+            <a href="{% url 'customapp:product_detail' product.pk %}">{{ product.name }}</a>
+            - ${{ product.price }}
+        </li>
+    {% endfor %}
+</ul>

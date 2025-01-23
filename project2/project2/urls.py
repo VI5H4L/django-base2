@@ -31,4 +31,5 @@ urlpatterns = [
 
     path('',views.home_view,name='home'),
     path('blog/', include('blogapp.urls')),
+    path('customapp/', include('customapp.urls')),
 ]
