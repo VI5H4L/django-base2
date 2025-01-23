@@ -7,4 +7,15 @@
 
 {% block content %}
     <h1>This is Home Page</h1>
+    <h3>Things Learnt</h3>
+    <ul>
+        <li><strong>CBVs</strong>: Simplify CRUD operations with <code>CreateView</code>, <code>UpdateView</code>, <code>DeleteView</code>, and <code>FormView</code>.</li>
+        <li><strong>Form Rendering</strong>: Use <code>form.as_p</code>, <code>form.as_table</code>, or <code>form.as_ul</code> to style form fields in templates.</li>
+        <li><strong>Migrations</strong>: Fake migrations mark a migration as applied without executing it.</li>
+        <li><strong>Reverse</strong>: Resolves URLs immediately for use in runtime scenarios.</li>
+        <li><strong>Reverse Lazy</strong>: Delays URL resolution until accessed, ideal for class-based view attributes.</li>
+        <li><strong>Custom Fields</strong>: <code>UppercaseCharField</code> customizes <code>CharField</code> to store input as uppercase.</li>
+        <li><strong>Django ORM</strong>: Perform CRUD operations, filter data using <code>Q</code> objects, and calculate aggregates like <code>Avg</code> and <code>Sum</code>.</li>
+        <li><strong>Example</strong>: Automatically save product names in uppercase using <code>UppercaseCharField</code>.</li>
+    </ul>
 {% endblock %}
