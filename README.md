@@ -75,3 +75,27 @@ Check migration status:
 python manage.py showmigrations
 
 --------------------------------------------------------------------------------
+
+Mixins
+
+LoginRequiredMixin: Requires authentication. |
+PermissionRequiredMixin: Requires specific permissions. |
+UserPassesTestMixin: Custom access check with test_func(). |
+SafeDeleteMixin: Implements soft deletion for models (using django-safedelete). |
+ContextMixin: Adds extra context to templates. |
+AjaxResponseMixin: Returns JSON responses for AJAX requests. |
+FormValidMixin: Executes custom logic after form validation.
+
+--------------------------------------------------------------------------------
+
+Serializers:
+
+Convert complex data types (like Django models) into simpler formats (JSON).
+Validate and deserialize incoming data (such as POST requests from an API).
+Make it easier to work with external data formats, especially in APIs.
+
+dispatch:
+A method in class-based views (CBVs) that routes the incoming HTTP request to the appropriate method based on the request type (e.g., GET, POST).
+Provides a customizable way to handle requests in a CBV and add additional logic if necessary.
+
+--------------------------------------------------------------------------------
